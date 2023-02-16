@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céu de Brigadeiro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: rgb(140, 224, 220);
+            font-family: 'Poppins', sans-serif;}
+
+        img{    position: absolute;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                justify-content: center;
+                margin-top: -70px;
+                opacity: 0.15;
+                margin-left: 20px;
+                width: 350px}
+
+        .tela{  display: inline-flex;
+                }
+        .titulo{
+            color: #fff;
+            font-size: 60px;
+            font-weight: 800;
+            position: relative}
+        .tela .titulo2{
+            margin-left: 15px;
+            margin-top: -10px;}
+
+        .titulo2 li{
+            color: rgb(48, 34, 34);
+            list-style: none;
+            font-size: 60px;
+            font-weight: 900;
+        }    
+        .titulo2 li span::after{
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 100%;
+            left: 0;
+            border-bottom: 3px solid rgb(48, 34, 34);
+            animation: ceu 3s alternate infinite;
+            margin-top: -10px
+        }
+        .titulo2 li span{   position: relative}
+
+        @keyframes ceu {50%{ 
+            left: 75%;
+            margin: 0 -35px 0 35px ;
+            margin-top: -10px
+             
+        }}
+    </style>
+</head>
+<body>
+    <div class="tela">
+        <img src="fundo.png" alt="fundo">
+        <div class="titulo">Céu de
+            <ul class="titulo2">
+                <li><span>Brigadeiro</span></li></ul>
+        </div>
+    </div>
+</body>
+</html>
