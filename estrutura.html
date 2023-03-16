@@ -7,6 +7,7 @@
     <title>Céu de Brigadeiro - Um Horizonte de Doces</title>
     <link href="css/responsivo.css" rel="stylesheet"> 
     <link href="css/navbar.css" rel="stylesheet"> 
+    <link href="css/footer.css" rel="stylesheet"> 
 </head>
 <body>
     <div class="principal">
@@ -36,8 +37,19 @@
             </ol>
 
         <script>
-            function abrir(){
-                document.querySelector(".menu2").style.display = "flex";}
+           var btn = document.querySelector('.tracos');
+           var menu = document.querySelector('.menu2');
+
+           btn.addEventListener('click', function() {
+
+            if(menu.style.display === 'flex'){
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+
+           });
+
         </script>
 
         <div class="divslider"></div>
@@ -64,7 +76,58 @@
 
         <div class="divabecedario"></div>
 
-        <div class="divfooter"></div>
+        <div class="divfooter">
+            <div class="footer" id="footer">
+                <div class="main-content">
+                <div class="left box">
+                  <h2>Sobre Nós</h2>
+                    <div class="content">
+                    <p class="texto"></p>
+                        <div class="social">
+              <a href="https://www.facebook.com/cifrasreligioosas" target="_blank"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://www.instagram.com/cifrasreligiosas/" target="_blank"><span class="fab fa-instagram"></span></a>
+              <a href="https://twitter.com/Cifreligiosas" target="_blank"><span class="fab fa-twitter"></span></a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="center box">
+                  <h2>&nbsp;Contato</h2>
+                      <div class="content">
+                          <div class="place">
+                          <span class="fas fa-map-marker-alt"></span>
+                          <span class="text">Joinville, Santa Catarina</span>
+                          </div>
+                          <div class="phone">
+                          <span class="fas fa-phone-alt"></span>
+                          <span class="text">Em breve</span>
+                          </div>
+                          <div class="email">
+                          <span class="fas fa-envelope"></span>
+                          <span class="text">cifrasreligiosas@gmail.com</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="right box">
+                  <h2>Nos Mande uma Mensagem</h2>
+                      <div class="content">
+                          <form action="#" id="musica">
+                              <div class="email">
+                                  <div class="text" id="te">Email</div>
+                                  <input type="email" required class="enputz">
+                              </div>
+                              <div class="msg">
+                                  <div class="text" id="te2">Mensagem</div>
+                                  <textarea rows="2" cols="25" required class="enputz"></textarea>
+                              </div>
+                              <div class="btn">
+                              <button type="submit" class="btn btn-info" id="enviar">Enviar</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/navbar.js"></script>
