@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céu de Brigadeiro - Um Horizonte de Doces</title>
+    <link href="css/responsivo.css" rel="stylesheet"> 
+    <link href="css/navbar.css" rel="stylesheet"> 
+</head>
+<body>
+    <div class="principal">
+        <div class="divnavbar">
+                <div class="container">
+                <h1 class="titulo">Céu de Brigadeiro</h1>
+            
+                <div class="menu">
+                    <a href="#" class="is-active">Início</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Produtos</a>
+                    <a href="#">Carrinho</a>
+                </div>
+            
+                <button class="tracos" onclick="abrir()">
+                    <span  onclick="abrir()"></span>
+                    <span  onclick="abrir()"></span>
+                    <span  onclick="abrir()"></span>
+                </div>
+            </div>
+
+            <ol class="menu2">
+               <div class="lista"><a href="#">Início</a></div>  <br>
+               <div class="lista"><a href="#">Sobre</a></div>  <br>
+               <div class="lista"><a href="#">Produtos</a></div> <br>
+               <div class="lista"><a href="#">Carrinho</a></div> 
+            </ol>
+
+        <script>
+            function abrir(){
+                document.querySelector(".menu2").style.display = "flex";}
+        </script>
+
+        <div class="divslider"></div>
+
+        <div class="divanuncio1"></div>
+
+        <div class="divsugestao">
+            <div class="divcalendario">
+                <div class="divtitulosu"></div>
+                <div class="divcalendario2"></div>
+            </div>
+            <div class="divsugestoesm"></div>
+        </div>
+
+        <div class="divanuncio2"></div>
+
+        <div class="divacessados">
+            <div class="divtituloac"></div>
+            <div class="divmusicasac">
+                <div class="divmusicasac2"></div>
+                <div class="divartistasac"></div>
+            </div>
+        </div>
+
+        <div class="divabecedario"></div>
+
+        <div class="divfooter"></div>
+    </div>
+
+    <script src="js/navbar.js"></script>
+</body>
+</html>
