@@ -8,6 +8,8 @@
     <link href="css/responsivo.css" rel="stylesheet"> 
     <link href="css/navbar.css" rel="stylesheet"> 
     <link href="css/footer.css" rel="stylesheet"> 
+    <link href="css/slider.css" rel="stylesheet"> 
+    <link href="css/cardes.css" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -55,9 +57,35 @@
 
         </script>
 
-        <div class="divslider"></div>
 
-        <div class="divanuncio1"></div>
+            <slider>
+	<div class="slide active"><a href="slider/primeiro.html"></a></div>
+	<div class="slide" id="slide1"><a href="slider/segundo.html"></a></div>
+	<div class="slide" id="slide2"><a href="Pesquisa.php"></a></div>
+	<div class="slide" id="slide3"><a href="Pesquisa.php"></a></div>
+	<div class="slide" id="slide4"><a href="#sugesta"></a></div>
+
+	<div class="navegacao">
+		<div class="btn active"></div>
+		<div class="btn"></div>
+		<div class="btn"></div>
+		<div class="btn"></div>
+		<div class="btn"></div>
+	</div>
+</slider>
+
+
+        <div class="divanuncio1">
+            <div class="card">
+                <div class="imgcard"><img src="img/slider/2.jpg"></div>
+                <div class="textocard">
+                    <h2></h2>
+                    <p></p>
+                    <button></button>
+                </div>
+            </div>
+
+        </div>
 
         <div class="divsugestao">
             <div class="divcalendario">
@@ -85,7 +113,7 @@
                 <div class="left box">
                   <h2>Sobre Nós</h2>
                     <div class="content">
-                    <p class="texto"></p>
+                    <p class="texto">Céu de Brigadeiro, empresa genuinamente brasileira, com 10 anos de mercado, foi a primeira rede de  fast food  do Brasil a incluir drones nas entregas. Sinta-se a vontade para saborear o melhor doce da região, Agradecemos sua visita em nosso site.</p>
                         <div class="social">
               <a href="" target="_blank"><span class="fab fa-facebook-f"></span></a>
               <a href="" target="_blank"><span class="fab fa-instagram"></span></a>
@@ -134,5 +162,6 @@
     </div>
 
     <script src="js/navbar.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
