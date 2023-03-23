@@ -17,13 +17,7 @@ body{
 }
 
 
-.divanuncio1{
-    width: 90%;
-    height: 500px;
-    margin: 3%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;}
+
 
 .divsugestao{
     width: 90%;
