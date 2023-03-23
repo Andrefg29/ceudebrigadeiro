@@ -14,8 +14,9 @@
 .divslider{
 	width: 100%;
 	position: relative;
-	margin: auto;
+
 	height: 700px;
+
 }
 
 .pre, .pro{
@@ -24,7 +25,7 @@
 	top: 40%;
 	width: auto;
 	padding: 16px;
-	color: white;
+	color: #1f0025;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;

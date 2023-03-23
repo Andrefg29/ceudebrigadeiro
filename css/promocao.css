@@ -1,0 +1,23 @@
+.p1, .p2, .p3{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    background-image: url("../img/promo/1.jpg");
+    width: 30%;
+    height: 200px;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.promocao{
+    width: 90%;
+    height: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
