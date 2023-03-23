@@ -16,18 +16,6 @@ body{
 
 }
 
-
-
-
-.divsugestao{
-    width: 90%;
-    height: 600px;
-    border: 2px solid red;
-    flex-direction: row;
-    justify-content: space-between;
-    display: flex;
-}
-
 .divcalendario{
     width: 35%;
     height: 600px;
