@@ -5,13 +5,26 @@
     justify-items: center;
     align-items: center;
     align-content: center;
-    background-image: url("../img/promo/1.jpg");
     width: 30%;
     height: 200px;
     color: #fff;
     border-radius: 25px;
     font-size: 26px;
     font-weight: 500;
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+
+.p1{
+    background-image: url("../img/promo/1.jpg"); 
+}
+
+.p2{
+    background-image: url("../img/promo/2.jpg"); 
+}
+
+.p3{
+    background-image: url("../img/promo/3.jpg"); 
 }
 
 .promocao{
@@ -20,4 +33,9 @@
     flex-direction: row;
     justify-content: space-between;
     display: flex;
+}
+
+.p1:hover, .p2:hover, .p3:hover{
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
 }
