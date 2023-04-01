@@ -6,15 +6,16 @@
 	display: none;
 }
 
-.slide img{
+.slide .img{
 	vertical-align: middle;
 	height: 700px;
+	background-size: 1600px;
+
 }
 
 .divslider{
 	width: 100%;
 	position: relative;
-
 	height: 700px;
 
 }

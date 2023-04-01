@@ -1,0 +1,23 @@
+.entregas{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    margin-bottom: 4%;
+    flex-direction: row;
+}
+
+.mapa{
+    width: 50%;
+    height: 500px;
+
+}
+
+.entregas h2{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.cadastro{
+    width: 50%;
+    height: 500px
+}

@@ -7,6 +7,7 @@
     <title>Céu de Brigadeiro - Um Horizonte de Doces</title>
     <link href="css/responsivo.css" rel="stylesheet"> 
     <link href="css/navbar.css" rel="stylesheet"> 
+    <link href="css/entregas.css" rel="stylesheet"> 
     <link href="css/footer.css" rel="stylesheet"> 
     <link href="css/slider.css" rel="stylesheet"> 
     <link href="css/cardesprod.css" rel="stylesheet"> 
@@ -62,27 +63,27 @@
         <div class="divslider">
             <div class="slide  fade">
                 <div class="numeroslides">1 / 5</div>
-                <img src="img/slider/1.png" style="width: 100%">
+                <div style="width: 100%; background-image: url('img/slider/1.png')" class="img"></div>
             </div>
 
             <div class="slide fade">
                 <div class="numeroslides">2 / 5</div>
-                <img src="img/slider/2.png" style="width: 100%">
+                <div style="width: 100%; background-image: url('img/slider/2.png')" class="img"></div>
             </div>
 
             <div class="slide fade">
                 <div class="numeroslides">3 / 5</div>
-                <img src="img/slider/3.png" style="width: 100%">
+                <div style="width: 100%; background-image: url('img/slider/3.png')" class="img"></div>
             </div>
 
             <div class="slide fade">
                 <div class="numeroslides">4 / 5</div>
-                <img src="img/slider/4.png" style="width: 100%">
+                <div style="width: 100%; background-image: url('img/slider/4.png')" class="img"></div>
             </div>
 
             <div class="slide fade">
                 <div class="numeroslides">5 / 5</div>
-                <img src="img/slider/5.png" style="width: 100%">
+                <div style="width: 100%; background-image: url('img/slider/5.png')" class="img"></div>
             </div>
 
             <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
@@ -139,7 +140,7 @@
         <div class="divanuncio1" id="divanuncio1">
 
           <a href="brownie.html"><div class="card">
-                <div class="imgcard"><img src="img/brigadeiro.jpg"></div>
+                <div class="imgcard"><img src="img/brownie.jpg"></div>
                 <div class="textocard">
                     <h2>Brownie Recheado</h2>
                     <p>R$12,50</p>
@@ -147,28 +148,28 @@
             </div></a>  
 
             <a href="buque.html"><div class="card">
-                <div class="imgcard"><img src="img/copo_felicidade.jpg"></div>
+                <div class="imgcard"><img src="img/buque.jpg"></div>
                 <div class="textocard">
                     <h2>Buque de Chocolate</h2>
                     <p>R$99,90</p>
                 </div>
             </div></a>
 
-            <div class="card">
-                <div class="imgcard"><img src="img/algodao.jpg"></div>
+            <a href="brownie.html"><div class="card">
+                <div class="imgcard"><img src="img/brownie.jpg"></div>
                 <div class="textocard">
-                    <h2>Algodão Doce - 400ml</h2>
-                    <p>R$8,50</p>
+                    <h2>Brownie Recheado</h2>
+                    <p>R$12,50</p>
                 </div>
-            </div>
+            </div></a>  
 
-            <div class="card">
-                <div class="imgcard"><img src="img/fondue.jpg"></div>
+            <a href="brownie.html"><div class="card">
+                <div class="imgcard"><img src="img/brownie.jpg"></div>
                 <div class="textocard">
-                    <h2>Fondue - Pote com 500ml</h2>
-                    <p>R$20,00</p>
+                    <h2>Brownie Recheado</h2>
+                    <p>R$12,50</p>
                 </div>
-            </div>
+            </div></a>  
 </div>
     <br>
     <h1>Promoções</h1>
@@ -178,17 +179,119 @@
             <div class="p3">Produtos até<br>R$100</div>
         </div>
 
-        <div class="divanuncio2"></div>
+        <br>
+        <h1>Entregas</h1>
+        <div class="entregas">
+            <div class="mapa">
+                <h2>Nossa Localização</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.7931506038317!2d-46.918865784879266!3d-23.177748453422932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf253dda0dfe29%3A0x6ac8941126b9620e!2sC%C3%A9u%20de%20Brigadeiro%20-%20Confeitaria%20Artesanal!5e0!3m2!1spt-BR!2sbr!4v1680188173436!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="cadastro">
+                <h2>Cadastro</h2>
+                <form action="Script_do_Formulario.php" method="post">
 
-        <div class="divacessados">
-            <div class="divtituloac"></div>
-            <div class="divmusicasac">
-                <div class="divmusicasac2"></div>
-                <div class="divartistasac"></div>
+                    <!-- ENDEREÇO -->
+                    <fieldset>
+                     <legend>Dados de Endereço</legend>
+                     <table cellspacing="10">
+                        <tr>
+                            <td>
+                             <label for="nome">Nome: </label>
+                            </td>
+                            <td align="left">
+                             <input type="text" name="email">
+                            </td>
+                            <td>
+                             <label for="sobrenome">Sobrenome: </label>
+                            </td>
+                            <td align="left">
+                             <input type="text" name="sobrenome">
+                            </td>
+                           </tr>
+                      <tr>
+                       <td>
+                        <label for="rua">Rua:</label>
+                       </td>
+                       <td align="left">
+                        <input type="text" name="rua">
+                       </td>
+                       <td>
+                        <label for="numero">Numero:</label>
+                       </td>
+                       <td align="left">
+                        <input type="text" name="numero" size="4">
+                       </td>
+                      </tr>
+                      <tr>
+                       <td>
+                        <label for="bairro">Bairro: </label>
+                       </td>
+                       <td align="left">
+                        <input type="text" name="bairro">
+                       </td>
+                      </tr>
+                      <tr>
+                       <td>
+                        <label for="estado">Estado:</label>
+                       </td>
+                       <td align="left">
+                        <select name="estado"> 
+                        <option value="ac">Acre</option> 
+                        <option value="al">Alagoas</option> 
+                        <option value="am">Amazonas</option> 
+                        <option value="ap">Amapá</option> 
+                        <option value="ba">Bahia</option> 
+                        <option value="ce">Ceará</option> 
+                        <option value="df">Distrito Federal</option> 
+                        <option value="es">Espírito Santo</option> 
+                        <option value="go">Goiás</option> 
+                        <option value="ma">Maranhão</option> 
+                        <option value="mt">Mato Grosso</option> 
+                        <option value="ms">Mato Grosso do Sul</option> 
+                        <option value="mg">Minas Gerais</option> 
+                        <option value="pa">Pará</option> 
+                        <option value="pb">Paraíba</option> 
+                        <option value="pr">Paraná</option> 
+                        <option value="pe">Pernambuco</option> 
+                        <option value="pi">Piauí</option> 
+                        <option value="rj">Rio de Janeiro</option> 
+                        <option value="rn">Rio Grande do Norte</option> 
+                        <option value="ro">Rondônia</option> 
+                        <option value="rs">Rio Grande do Sul</option> 
+                        <option value="rr">Roraima</option> 
+                        <option value="sc">Santa Catarina</option> 
+                        <option value="se">Sergipe</option> 
+                        <option value="sp">São Paulo</option> 
+                        <option value="to">Tocantins</option> 
+                       </select>
+                       </td>
+                      </tr>
+                      <tr>
+                       <td>
+                        <label for="cidade">Cidade: </label>
+                       </td>
+                       <td align="left">
+                        <input type="text" name="cidade">
+                       </td>
+                      </tr>
+                      <tr>
+                       <td>
+                        <label for="cep">CEP: </label>
+                       </td>
+                       <td align="left">
+                        <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+                       </td>
+                      </tr>
+                     </table>
+                    </fieldset>
+                  
+
+                    <input type="submit">
+                    <input type="reset" value="Limpar">
+                    </form>
             </div>
         </div>
 
-        <div class="divabecedario"></div>
 
         <div class="divfooter" id="divfooter">
             <div class="footer" id="footer">
