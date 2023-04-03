@@ -1,0 +1,45 @@
+.titulos5{
+    margin-top: 150px
+}
+
+.texto{
+    width: 700px;
+    height: 300px;
+}
+
+.texto input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    color: #1f0025;
+    font-size: 1em;
+    transition: 0.6s;
+    height: 300px;
+}
+
+.texto span{
+   position: absolute;
+   left: 460px;
+   top: 216.3px;
+   padding: 10px;
+   pointer-events: none;
+   font-size: 1em;
+   color: #ccc;
+   text-transform: uppercase;
+   transition: 0.5s;
+   font-weight: 500;
+}
+
+.texto input:valid ~ span,
+.texto input:focus ~ span{
+    color:#fff;
+    transform: translateX(10px) translateY(-6px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    background-color: #1f0025;}
+
+.texto input:valid,
+.texto input:focus{
+    border: 1px solid #1f0025;}
