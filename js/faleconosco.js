@@ -1,5 +1,5 @@
 
-  topico = "senai/mensagemchupacu";  // Variável que ficará no servidor MQTT
+  topico = "senai/mensagem2";  // Variável que ficará no servidor MQTT
 
   // Conexão:
   client = new Paho.MQTT.Client("broker.hivemq.com", Number(8000), "");
@@ -26,7 +26,7 @@
 
   // Função executada quando a variável (tópico) no servidor receber uma mensagem:
   function MensagemRecebida(message) {
-      resposta.innerHTML += "<br><br>" + message.payloadString;
+      resposta.innerHTML += "<div class='textcor'> <span class='anonimo'> Usuário: </span><br>" + message.payloadString+"</div>";
   }
 
   function Enviar()
