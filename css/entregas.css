@@ -21,3 +21,14 @@
     width: 50%;
     height: 500px
 }
+
+fieldset{
+    border: 2px solid #1f0025;
+    border-radius: 10px;
+}
+
+legend{
+    
+    color: #1f0025;
+    font-weight: 600;
+}
