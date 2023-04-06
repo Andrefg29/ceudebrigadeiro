@@ -38,16 +38,16 @@
 
 
     <!--LOGIN EMAIL-->
-    <form id="signin" action="estrutura.html">
+    <form id="signin" action="login.php" method="post">
       <div class="email">
         <i class="fas fa-envelope iEmail"></i>
-        <input type="text"  id="email" onkeyup="Email();" placeholder="Email" required />
+        <input type="text"  id="email" onkeyup="Email();" placeholder="Email" name="email" required />
       </div>
 
       <!--LOGIN SENHA-->
       <div class="senha">
         <i class="fas fa-lock iSenha"></i>
-        <input type="password" placeholder="Senha" required />
+        <input type="password" placeholder="Senha" name="senha" required />
       </div>
       <div class="divCheck">
         <input type="checkbox" />
