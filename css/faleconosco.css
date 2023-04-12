@@ -58,6 +58,8 @@ hr{
     
 }
 
+
+
 .texto span{
    position: absolute;
    left: 3%;
@@ -117,4 +119,24 @@ hr{
 
 .anonimo{
     color: #ccc
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fac031;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 45px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.paragrafo{
+    color: #ffffff;
+    margin-bottom: 50px;
 }

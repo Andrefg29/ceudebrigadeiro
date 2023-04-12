@@ -125,7 +125,7 @@
 .right form .btn{
   margin-top: 10px;
 }
-.right form .btn button{
+.right form .btn input{
   height: 40px;
   width: 100%;
   border: none;
@@ -137,7 +137,7 @@
   transition: .3s;
   font-family: 'Poppins', sans-serif;
 }
-.right form .btn button:hover{
+.right form .btn input:hover{
   background: #000;
   color: #9201af;
 }

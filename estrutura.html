@@ -26,7 +26,7 @@
                 <a href="estrutura.html" class="is-active">Início</a>
                 <a href="#divfooter">Sobre</a>
                 <a href="produtos.html">Produtos</a>
-                <a href="#">Carrinho</a>
+                <a href="carrinho.html">Carrinho</a>
                 <a href="MQTT.html">Fale Conosco</a>
             </div>
         
@@ -41,7 +41,7 @@
            <div class="lista"><a href="estrutura.html">Início</a></div>  <br>
            <div class="lista"><a href="#divfooter">Sobre</a></div>  <br>
            <div class="lista"><a href="produtos.html">Produtos</a></div> <br>
-           <div class="lista"><a href="#">Carrinho</a></div> <br>
+           <div class="lista"><a href="carrinho.html">Carrinho</a></div> <br>
            <div class="lista"><a href="MQTT.html" class="is-active">Fale Conosco</a></div> 
         </ol>
         
@@ -60,6 +60,9 @@
            });
 
         </script>
+
+
+
 
         <div class="divslider">
             <div class="slide  fade">
@@ -193,50 +196,14 @@
 
                     <!-- ENDEREÇO -->
                     <fieldset>
-                     <legend> Dados de Endereço </legend>
-                     <table cellspacing="10">
-                        <tr>
-                            <td>
-                             <label for="nome">Nome: </label>
-                            </td>
-                            <td align="left">
-                             <input type="text" name="email">
-                            </td>
-                            <td>
-                             <label for="sobrenome">Sobrenome: </label>
-                            </td>
-                            <td align="left">
-                             <input type="text" name="sobrenome">
-                            </td>
-                           </tr>
-                      <tr>
-                       <td>
-                        <label for="rua">Rua:</label>
-                       </td>
-                       <td align="left">
-                        <input type="text" name="rua">
-                       </td>
-                       <td>
-                        <label for="numero">Numero:</label>
-                       </td>
-                       <td align="left">
-                        <input type="text" name="numero" size="4">
-                       </td>
-                      </tr>
-                      <tr>
-                       <td>
-                        <label for="bairro">Bairro: </label>
-                       </td>
-                       <td align="left">
-                        <input type="text" name="bairro">
-                       </td>
-                      </tr>
-                      <tr>
-                       <td>
-                        <label for="estado">Estado:</label>
-                       </td>
-                       <td align="left">
-                        <select name="estado"> 
+                     <legend> Adicionar Endereço </legend>
+                     
+                             <input type="text" name="email" placeholder="Nome do Endereço">
+                             <input type="text" name="sobrenome" placeholder="Email"> <br>
+                             <input type="text" name="rua" placeholder="Rua" id="rua">
+                             <input type="text" name="numero" size="4" placeholder="Nº Casa" id="numerocasa">
+                             <input type="text" name="bairro" placeholder="Bairro" id="bairro">
+                        <select name="estado" id="estado"> 
                         <option value="ac">Acre</option> 
                         <option value="al">Alagoas</option> 
                         <option value="am">Amazonas</option> 
@@ -265,30 +232,15 @@
                         <option value="sp">São Paulo</option> 
                         <option value="to">Tocantins</option> 
                        </select>
-                       </td>
-                      </tr>
-                      <tr>
-                       <td>
-                        <label for="cidade">Cidade: </label>
-                       </td>
-                       <td align="left">
-                        <input type="text" name="cidade">
-                       </td>
-                      </tr>
-                      <tr>
-                       <td>
-                        <label for="cep">CEP: </label>
-                       </td>
-                       <td align="left">
-                        <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
-                       </td>
-                      </tr>
-                     </table>
+                        <input type="text" name="cidade" placeholder="Cidade" id="cidade">
+                        <input type="text" name="cep" size="5" maxlength="9" placeholder="CEP" id="cep">
+                      
                     </fieldset>
                   
-
-                    <input type="submit">
-                    <input type="reset" value="Limpar">
+                    <div class="botoesen">
+                    <input type="submit" class="botaoen">
+                    <input type="reset" value="Limpar" class="botaoen">
+                </div>
                     </form>
             </div>
         </div>
@@ -329,18 +281,20 @@
                   <div class="right box">
                   <h2>Nos Mande uma Mensagem</h2>
                       <div class="content">
-                          <form action="#" id="musica">
+                          <form action="https://api.staticforms.xyz/submit" method="post" id="musica">
                               <div class="email">
                                   <div class="text" id="te">Email</div>
-                                  <input type="email" required class="enputz">
+                                  <input type="email" required class="enputz" name="email">
                               </div>
                               <div class="msg">
                                   <div class="text" id="te2">Mensagem</div>
-                                  <textarea rows="2" cols="25" required class="enputz"></textarea>
+                                  <textarea rows="2" cols="25" required class="enputz" name="message"></textarea>
                               </div>
                               <div class="btn">
-                              <button type="submit" class="btn btn-info" id="enviar">Enviar</button>
+                              <input type="submit" class="btn btn-info" id="enviar">
                               </div>
+                              <input type="hidden" name="redirectTo" value="obrigado.html">
+                              <input type="hidden" name="accessKey" value="40630892-3374-416c-bd3e-a6b368d51678">
                           </form>
                       </div>
                   </div>
@@ -351,5 +305,8 @@
 
     <script src="js/navbar.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/maps.js"></script>
 </body>
+
+
 </html>
