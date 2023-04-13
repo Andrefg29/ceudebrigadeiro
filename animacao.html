@@ -12,10 +12,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0;
-            background-size: cover;
-            height: 100vh;
-            background-image: url('img/chocolate.jpg');
+            min-height: 100vh;
+            background-color: rgb(140, 224, 220);
             font-family: 'Poppins', sans-serif;}
 
         .fundo{    position: absolute;
@@ -24,35 +22,35 @@
                 justify-items: center;
                 justify-content: center;
                 margin-top: -70px;
-                opacity: 0.2;
+                opacity: 0.15;
                 margin-left: 20px;
                 width: 350px}
 
         .tela{  display: inline-flex;
-                }
+                animation: fadeIn 3s;}
         .titulo{
-            color: whitesmoke;
+            color: #fff;
             font-size: 60px;
             font-weight: 800;
             position: relative;
-            }
+            animation: fadeInLeft 3s;}
         .tela .titulo2{
             margin-left: 15px;
             margin-top: -10px;}
 
         .titulo2 li{
-            color:#D51C52;
+            color: rgb(48, 34, 34);
             list-style: none;
             font-size: 60px;
             font-weight: 900;
-            animation: 3s;}    
+            animation: fadeInLeft 3s;}    
         .titulo2 li span::after{
             content: "";
             position: absolute;
             width: 15%;
             height: 100%;
             left: 0;
-            border-bottom: 3px solid #D51C52;
+            border-bottom: 3px solid rgb(48, 34, 34);
             animation: ceu 3s alternate infinite;
             margin-top: -10px
         }
@@ -70,7 +68,7 @@
             margin-top: 350px}
 
         .barra div{ height: 100%;
-                    background-color: #D51C52;
+                    background-color: rgb(48, 34, 34);
                     animation: barra 5s;}
 
      
