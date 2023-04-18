@@ -61,8 +61,7 @@ font-weight: 600;
         margin: 2%}
 
     .botaoen{
-        background: rgb(146,1,175);
-        background: linear-gradient(90deg, rgba(146,1,175,1) 0%, rgba(214,8,255,1) 100%);   
+        background: #D51C52;
         padding: 0.4rem;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
@@ -93,6 +92,6 @@ font-weight: 600;
 
 fieldset input:focus,
 fieldset select:focus{
-    border: 2px solid #9201af;
-    box-shadow: 2px 2px 1px #9201af;
+    border: 2px solid #D51C52;
+    box-shadow: 2px 2px 1px #D51C52;
 }
