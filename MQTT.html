@@ -117,21 +117,23 @@ if(menu.style.display === 'flex'){
           </div>
           <div class="right box">
           <h2>Nos Mande uma Mensagem</h2>
-              <div class="content">
-                  <form action="#" id="musica">
-                      <div class="email">
-                          <div class="text" id="te">Email</div>
-                          <input type="email" required class="enputz">
-                      </div>
-                      <div class="msg">
-                          <div class="text" id="te2">Mensagem</div>
-                          <textarea rows="2" cols="25" required class="enputz"></textarea>
-                      </div>
-                      <div class="btn">
-                      <button type="submit" class="btn btn-info" id="enviar">Enviar</button>
-                      </div>
-                  </form>
-              </div>
+          <div class="content">
+            <form action="https://api.staticforms.xyz/submit" method="post" id="musica">
+                <div class="email">
+                    <div class="text" id="te">Email</div>
+                    <input type="email" required class="enputz" name="email">
+                </div>
+                <div class="msg">
+                    <div class="text" id="te2">Mensagem</div>
+                    <textarea rows="2" cols="25" required class="enputz" name="message"></textarea>
+                </div>
+                <div class="btn">
+                <input type="submit" class="btn btn-info" id="enviar">
+                </div>
+                <input type="hidden" name="redirectTo" value="obrigado.html">
+                <input type="hidden" name="accessKey" value="40630892-3374-416c-bd3e-a6b368d51678">
+            </form>
+        </div>
           </div>
       </div>
     </div>

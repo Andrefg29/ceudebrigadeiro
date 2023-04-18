@@ -21,6 +21,15 @@
     list-style-type: none;
     font-weight: 500;
 }
+
+.links ol{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-weight: 500;
+}
+
 figure img{
     width: 500px;
     border-radius: 15px;

@@ -60,7 +60,7 @@
         </script>
 
         <h1 class="titu">Produtos</h1>
-        
+      
         <div class="divanuncio1" id="divanuncio1">
 
             <a href="brigadeiro.html"><div class="card">
@@ -143,45 +143,45 @@
 
         <div class="divanuncio1" id="divanuncio1">
 
-            <div class="card">
-                <div class="imgcard"><img src="img/brigadeiro.jpg"></div>
+            <a href="brownie.html"><div class="card">
+                <div class="imgcard"><img src="img/brownie.jpg"></div>
                 <div class="textocard">
-                    <h2>Combo Brigadeiros</h2>
-                    <p>R$24,50</p>
+                    <h2>Brownie Recheado</h2>
+                    <p>R$12,50</p>
                 </div>
-            </div>
-    
-            <div class="card">
-                <div class="imgcard"><img src="img/copo_felicidade.jpg"></div>
+            </div></a>  
+
+            <a href="buque.html"><div class="card">
+                <div class="imgcard"><img src="img/buque.jpg"></div>
                 <div class="textocard">
-                    <h2>Copo da Felicidade</h2>
-                    <p>R$15,90</p>
+                    <h2>Buque de Chocolate</h2>
+                    <p>R$99,90</p>
                 </div>
-            </div>
-    
-            <div class="card">
-                <div class="imgcard"><img src="img/algodao.jpg"></div>
+            </div></a>
+
+            <a href="ovo.html"><div class="card">
+                <div class="imgcard"><img src="img/ovinho.jpg"></div>
                 <div class="textocard">
-                    <h2>Algodão Doce - 400ml</h2>
-                    <p>R$8,50</p>
+                    <h2>Ovo de Colher</h2>
+                    <p>R$28,90</p>
                 </div>
-            </div>
-    
-            <div class="card">
-                <div class="imgcard"><img src="img/fondue.jpg"></div>
+            </div></a>  
+
+            <a href="cupcake.html"><div class="card">
+                <div class="imgcard"><img src="img/cupcake.jpg"></div>
                 <div class="textocard">
-                    <h2>Fondue - Pote com 500ml</h2>
-                    <p>R$20,00</p>
+                    <h2>Mini Cupcake - 12un</h2>
+                    <p>R$16,00</p>
                 </div>
-            </div>
-    
-            <div class="card">
-                <div class="imgcard"><img src="img/fondue.jpg"></div>
-                <div class="textocard">
-                    <h2>Fondue - Pote com 500ml</h2>
-                    <p>R$20,00</p>
-                </div>
-            </div>
+                </div></a>
+
+                <a href="copo_felicidade.html"><div class="card">
+                    <div class="imgcard"><img src="img/copo_felicidade.jpg"></div>
+                    <div class="textocard">
+                        <h2>Copo da Felicidade</h2>
+                        <p>R$15,90</p>
+                    </div>
+                    </div></a>
         </div>
         <br>
 
@@ -218,21 +218,23 @@
                   </div>
                   <div class="right box">
                   <h2>Nos Mande uma Mensagem</h2>
-                      <div class="content">
-                          <form action="#" id="musica">
-                              <div class="email">
-                                  <div class="text" id="te">Email</div>
-                                  <input type="email" required class="enputz">
-                              </div>
-                              <div class="msg">
-                                  <div class="text" id="te2">Mensagem</div>
-                                  <textarea rows="2" cols="25" required class="enputz"></textarea>
-                              </div>
-                              <div class="btn">
-                              <button type="submit" class="btn btn-info" id="enviar">Enviar</button>
-                              </div>
-                          </form>
-                      </div>
+                  <div class="content">
+                    <form action="https://api.staticforms.xyz/submit" method="post" id="musica">
+                        <div class="email">
+                            <div class="text" id="te">Email</div>
+                            <input type="email" required class="enputz" name="email">
+                        </div>
+                        <div class="msg">
+                            <div class="text" id="te2">Mensagem</div>
+                            <textarea rows="2" cols="25" required class="enputz" name="message"></textarea>
+                        </div>
+                        <div class="btn">
+                        <input type="submit" class="btn btn-info" id="enviar">
+                        </div>
+                        <input type="hidden" name="redirectTo" value="obrigado.html">
+                        <input type="hidden" name="accessKey" value="40630892-3374-416c-bd3e-a6b368d51678">
+                    </form>
+                </div>
                   </div>
               </div>
             </div>

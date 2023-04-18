@@ -7,25 +7,67 @@
 
   <title>Céu de Brigadeiro - Um Horizonte de Doces</title>
 
-  <!-- Css -->
+  <link href="css/responsivo.css" rel="stylesheet"> 
   <link rel="stylesheet" href="css/produto.css">
+  <link rel="stylesheet" href="css/navbar.css">
 </head>
 
 <body>
   
+  <div class="divnavbar">
+    <div class="container">
+    <h1 class="titulo">Céu de Brigadeiro</h1>
+
+    <div class="menu">
+        <a href="estrutura.html" class="is-active">Início</a>
+        <a href="#divfooter">Sobre</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="carrinho.html">Carrinho</a>
+        <a href="MQTT.html">Fale Conosco</a>
+    </div>
+
+    <button class="tracos" onclick="abrir()">
+        <span  onclick="abrir()"></span>
+        <span  onclick="abrir()"></span>
+        <span  onclick="abrir()"></span>
+    </div>
+</div> 
+
+<ol class="menu2">
+   <div class="lista"><a href="estrutura.html">Início</a></div>  <br>
+   <div class="lista"><a href="#divfooter">Sobre</a></div>  <br>
+   <div class="lista"><a href="produtos.html">Produtos</a></div> <br>
+   <div class="lista"><a href="carrinho.html">Carrinho</a></div> <br>
+   <div class="lista"><a href="MQTT.html" class="is-active">Fale Conosco</a></div> 
+</ol>
+
+<script>
+   var btn = document.querySelector('.tracos');
+   var menu = document.querySelector('.menu2');
+
+   btn.addEventListener('click', function() {
+
+    if(menu.style.display === 'flex'){
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+
+   });
+
+</script>
+  
   <main>
 
-
+    <nav aria-label="breadcrumb" class="links">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="estrutura.html">Início/</a></li>
+        <li class="breadcrumb-item"><a href="produtos.html">Doces/</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Fondue</li>
+      </ol>
+    </nav>
     <!-- container produto -->
     <section class="container">
-
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="estrutura.html">Início</a></li>
-          <li class="breadcrumb-item"><a href="produtos.html">Doces</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Fondue</li>
-        </ol>
-      </nav>
 
       <article class="row produtos-compra">
         <figure class="col-md-7 mb-3">
@@ -77,7 +119,7 @@
               R$ 20,00
             </strong>
 
-            <form action="#">
+            <form action="carrinho.html">
               <div class="form-group">
                 <label for="produtos-quantidade-itens">Quantidade</label>
                 <select class="form-control" id="produtos-quantidade-itens">
@@ -104,7 +146,7 @@
                   <option>Marshmallow/Biscoito/Creme Ninho/Brigadeiro</option>
                 </select>
               </div>
-
+<br>
               <button type="submit" class="btn btn-success col-md-12">Comprar</button>
             </form>
           </article>
