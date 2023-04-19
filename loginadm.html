@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Administrador - Céu de Brigadeiro</title>
+    <link href="css/entregas.css" rel="stylesheet"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+        }
+
+        .cadastro{
+            width: 80%;
+        }
+
+        fieldset input{
+            width: 18%
+        }
+
+        .usuario{
+            width: 100%
+        }
+
+        .usuariot{
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        thead{
+            background-color: #D51C52;
+            color: #fff
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="cadastro">
+        <h2>Página de Administrador - Céu de Brigadeiro</h2>
+        <form action="#" method="post">
+
+            <!-- ENDEREÇO -->
+            <fieldset>
+             <legend> Adicionar Endereço </legend>
+             
+                     <input type="text" name="nome" placeholder="Nome do Usuário">
+                     <input type="text" name="email" placeholder="Email">
+                     <input type="text" name="senha" placeholder="Senha" id="senha">
+                <input type="text" name="cep" size="5" maxlength="9" placeholder="CEP" id="cep">
+              
+            </fieldset>
+          
+            <div class="botoesen">
+            <input type="submit" class="botaoen" value="Pesquisar">
+            <input type="submit" class="botaoen" value="Alterar">
+            <input type="submit" class="botaoen" value="Inserir">
+            <input type="reset" value="Limpar" class="botaoen">
+        </div>
+            </form>
+
+            <div class="usuario">
+                <table border="1" class="usuariot">
+                    <thead>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Senha</th>
+                        <th>CEP</th>
+                        <th>--</th>
+                    </thead>
+                    <tr>
+                        <td>Ted</td>
+                        <td>ted@gmail.com</td>
+                        <td>1234324</td>
+                        <td>89209-534</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Ralf</td>
+                        <td>ralf@gmail.com</td>
+                        <td>654213</td>
+                        <td>87656-254</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Ted</td>
+                        <td>ted@gmail.com</td>
+                        <td>1234324</td>
+                        <td>89209-534</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Ralf</td>
+                        <td>ralf@gmail.com</td>
+                        <td>654213</td>
+                        <td>87656-254</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+
+</body>
+</html>
