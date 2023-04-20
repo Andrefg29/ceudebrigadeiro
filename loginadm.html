@@ -24,6 +24,10 @@
             width: 18%
         }
 
+        .pesquisa input{
+            width: 40%
+        }
+
         .usuario{
             width: 100%
         }
@@ -48,9 +52,19 @@
         <h2>Página de Administrador - Céu de Brigadeiro</h2>
         <form action="#" method="post">
 
-            <!-- ENDEREÇO -->
+            <fieldset class="pesquisa">
+                <legend> Pesquisar Usuário </legend>
+                
+                        <input type="text" name="nome" placeholder="Nome do Usuário">
+                        <input type="submit" class="botaoen" value="Pesquisar" style="width: 10%;">
+                 
+               </fieldset>
+            </form>
+
+            <br>
+
             <fieldset>
-             <legend> Adicionar Endereço </legend>
+             <legend> Adicionar/Alterar Usuário </legend>
              
                      <input type="text" name="nome" placeholder="Nome do Usuário">
                      <input type="text" name="email" placeholder="Email">
@@ -60,7 +74,7 @@
             </fieldset>
           
             <div class="botoesen">
-            <input type="submit" class="botaoen" value="Pesquisar">
+            
             <input type="submit" class="botaoen" value="Alterar">
             <input type="submit" class="botaoen" value="Inserir">
             <input type="reset" value="Limpar" class="botaoen">
