@@ -88,6 +88,10 @@ input[type="password"] {
   font-weight: 300;
 }
 
+.cads input{
+  margin-top: 15px;
+}
+
 input[type="submit"] {
   background: #D51C52;
   color: white;
@@ -101,8 +105,21 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.cads input[type="submit"] {
+  background: #D51C52;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
 .divCheck {
-  margin: 10px 0 0 5px;
+  margin: 2px 0 0 5px;
   width: 80%;
   font-size: 13px;
 }
@@ -119,6 +136,26 @@ i {
   position: absolute;
   left: 0;
   padding: 10px 10px;
+}
+
+.iUser{
+  top: 15px
+}
+
+.iEmail3{
+  top: 65px
+}
+
+.icami{
+  top: 116px
+}
+
+.isenhazinha{
+  top: 167px
+}
+
+.isenhazinha2{
+  top: 218px
 }
 
 .iEmail {

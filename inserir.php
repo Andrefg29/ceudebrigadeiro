@@ -1,15 +1,15 @@
 <?php
     include("conecta.php");
     // PARA PEGAR O TEXTO DOS INPUTS
+    $nome  = $_POST["nome"];
     $email  = $_POST["email"];
+    $cep  = $_POST["cep"];
     $senha = $_POST["senha"];
 
-    $comando = $pdo->prepare("INSERT INTO cadastro VALUES ('$email','$senha')");
+    $comando = $pdo->prepare("INSERT INTO cadastro (nome, email, CEP, senha) VALUES ('$nome','$email','$cep','$senha')");
     
     $resultado = $comando->execute();
 
-    //para voltar n o formulário:
-    
-    //header("Location: estrutura.html");
+    ("Location: estrutura.html");
 
 ?>
