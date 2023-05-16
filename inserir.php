@@ -10,6 +10,6 @@
     
     $resultado = $comando->execute();
 
-    ("Location: estrutura.html");
+    header("Location: estrutura.html");
 
 ?>
