@@ -1,3 +1,20 @@
+<?php
+
+if(isset($_GET["login"])){
+  $login = $_GET["login"];
+  if($login == 0){
+    echo("<script>
+    function alerta()
+    {
+      alert('Email ou Senha incorretos')
+    }
+    </script>");
+  }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,7 +45,7 @@
 
 <!--CAIXA DE LOGIN E CADASTRO-->
 
-<body>
+<body onload="alerta();">
 
   <h1>Céu de Brigadeiro</h1>
 
@@ -42,7 +59,7 @@
 
     <!--LOGIN EMAIL-->
 
-    <form id="signin" action="estrutura.html" method="post">
+    <form id="signin" action="estrutura.php" method="post">
   
 
       <div class="email">

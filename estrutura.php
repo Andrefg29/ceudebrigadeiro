@@ -1,3 +1,22 @@
+<?php
+
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+
+include('conecta.php');
+    $comando = $pdo->prepare("SELECT * from cadastro WHERE email='$email' and senha='$senha'" );
+    $resultado = $comando->execute();
+    $n = 0;
+    while ($linhas = $comando->fetch())
+    {
+        $n = $n-1;
+    }
+    if($n == 0){
+        header("Location: login.php?login=0");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,7 +25,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Céu de Brigadeiro - Um Horizonte de Doces</title>
     <link href="css/responsivo.css" rel="stylesheet"> 
-    <link href="css/navbar.css" rel="stylesheet"> 
     <link href="css/entregas.css" rel="stylesheet"> 
     <link href="css/footer.css" rel="stylesheet"> 
     <link href="css/slider.css" rel="stylesheet"> 
@@ -15,61 +33,20 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <style>
+        html {
+    scroll-behavior: smooth;
+  }
+
+    </style>
 </head>
 <body>
-    <div class="principal">
-        <div class="divnavbar">
-            <div class="container">
-            <h1 class="titulo">Céu de Brigadeiro</h1>
-        
-            <div class="menu">
-                <a href="estrutura.html" class="is-active">Início</a>
-                <a href="#divfooter">Sobre</a>
-                <a href="produtos.html">Produtos</a>
-                <a href="carrinho.html">Carrinho</a>
-                <a href="MQTT.html">Fale Conosco</a>
-                <a href="login.html">Entrar</a>
-            </div>
-        
-            <button class="tracos" onclick="abrir()">
-                <span  onclick="abrir()"></span>
-                <span  onclick="abrir()"></span>
-                <span  onclick="abrir()"></span>
-            </div>
-        </div> 
-        
-        <ol class="menu2">
-           <div class="lista"><a href="estrutura.html">Início</a></div>  <br>
-           <div class="lista"><a href="#divfooter">Sobre</a></div>  <br>
-           <div class="lista"><a href="produtos.html">Produtos</a></div> <br>
-           <div class="lista"><a href="carrinho.html">Carrinho</a></div> <br>
-           <div class="lista"><a href="MQTT.html">Fale Conosco</a></div> <br>
-           <div class="lista"><a href="login.html">Fale Conosco</a></div> 
-        </ol>
-        
-        <script>
-           var btn = document.querySelector('.tracos');
-           var menu = document.querySelector('.menu2');
-
-           btn.addEventListener('click', function() {
-
-            if(menu.style.display === 'flex'){
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-            }
-
-           });
-
-        </script>
-
-
-
+   <?php include("navbar.html") ?>
 
         <div class="divslider">
             <div class="slide  fade">
                 <div class="numeroslides">1 / 5</div>
-                <div style="width: 100%; background-image: url('img/slider/1.png')" class="img"></div>
+                <div style="width: 100%; background-image: url('img/slider/3.png')" class="img"></div>
             </div>
 
             <div class="slide fade">
@@ -79,7 +56,7 @@
 
             <div class="slide fade">
                 <div class="numeroslides">3 / 5</div>
-                <div style="width: 100%; background-image: url('img/slider/3.png')" class="img"></div>
+                <div style="width: 100%; background-image: url('img/slider/1.png')" class="img"></div>
             </div>
 
             <div class="slide fade">
@@ -195,16 +172,16 @@
             </div>
             <div class="cadastro">
                 <h2>Cadastro</h2>
-                <form action="Script_do_Formulario.php" method="post">
+                <form action="inserirendereco.php" method="post">
 
                     <!-- ENDEREÇO -->
                     <fieldset>
                      <legend> Adicionar Endereço </legend>
                      
-                             <input type="text" name="email" placeholder="Nome do Endereço">
-                             <input type="text" name="sobrenome" placeholder="Email"> <br>
+                             <input type="text" name="nomeendereco" placeholder="Apelido do Endereço">
+                             <input type="text" name="emailendereco" placeholder="Email"> <br>
                              <input type="text" name="rua" placeholder="Rua" id="rua">
-                             <input type="text" name="numero" size="4" placeholder="Nº Casa" id="numerocasa">
+                             <input type="text" name="numerocasa" size="4" placeholder="Nº Casa" id="numerocasa">
                              <input type="text" name="bairro" placeholder="Bairro" id="bairro">
                         <select name="estado" id="estado"> 
                         <option value="ac">Acre</option> 
@@ -236,7 +213,7 @@
                         <option value="to">Tocantins</option> 
                        </select>
                         <input type="text" name="cidade" placeholder="Cidade" id="cidade">
-                        <input type="text" name="cep" size="5" maxlength="9" placeholder="CEP" id="cep">
+                        <input type="text" name="cep" placeholder="CEP" id="cep">
                       
                     </fieldset>
                   
@@ -248,7 +225,53 @@
             </div>
         </div>
 
-<br><br><br><br>
+        <h1>Últimos Pedidos</h1>
+
+<div class="divanuncio1" id="divanuncio1">
+
+    <a href="brownie.html"><div class="card">
+        <div class="imgcard"><img src="img/brownie.jpg"></div>
+        <div class="textocard">
+            <h2>Brownie Recheado</h2>
+            <p>R$12,50</p>
+        </div>
+    </div></a>  
+
+    <a href="buque.html"><div class="card">
+        <div class="imgcard"><img src="img/buque.jpg"></div>
+        <div class="textocard">
+            <h2>Buque de Chocolate</h2>
+            <p>R$99,90</p>
+        </div>
+    </div></a>
+
+    <a href="ovo.html"><div class="card">
+        <div class="imgcard"><img src="img/ovinho.jpg"></div>
+        <div class="textocard">
+            <h2>Ovo de Colher</h2>
+            <p>R$28,90</p>
+        </div>
+    </div></a>  
+
+    <a href="cupcake.html"><div class="card">
+        <div class="imgcard"><img src="img/cupcake.jpg"></div>
+        <div class="textocard">
+            <h2>Mini Cupcake - 12un</h2>
+            <p>R$16,00</p>
+        </div>
+        </div></a>
+
+        <a href="copo_felicidade.html"><div class="card">
+            <div class="imgcard"><img src="img/copo_felicidade.jpg"></div>
+            <div class="textocard">
+                <h2>Copo da Felicidade</h2>
+                <p>R$15,90</p>
+            </div>
+            </div></a>
+</div>
+<br>
+
+<br>
 
         <div class="divfooter" id="divfooter">
             <div class="footer" id="footer">
