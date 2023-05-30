@@ -29,6 +29,10 @@ if(isset($_GET["login"])){
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
   <style>
+    body{
+      flex-direction: column
+    }
+
     .errado 
 {
     background: rgba(255, 0, 0, 0.271);
@@ -39,6 +43,10 @@ if(isset($_GET["login"])){
 {
     background-color: rgba(0, 128, 0, 0.272);
 
+}
+
+a{
+  color: #fff
 }
   </style>
 </head>
@@ -76,7 +84,7 @@ if(isset($_GET["login"])){
         <input type="checkbox" />
         <span>Lembrar Senha</span>
       </div>
-      <input type="submit" value="Entrar">
+      <input type="submit" value="Entrar" name="entrar">
     </form>
 
     <!--CADASTRO EMAIL E SENHA-->
@@ -108,9 +116,12 @@ if(isset($_GET["login"])){
         <input type="checkbox" required />
         <span>Aceitar Termos e Condições</span> 
       </div>
-      <input type="submit" value="Cadastrar">
+      <input type="submit" value="Cadastrar" name="cadastro">
     </form>
   </div>
+  <br>
+
+    <a href="estrutura.php" name="anonimo">Continuar sem Login</a>
 
   <script src="./js/index.js"></script>
   <script src="./js/validar.js"></script>

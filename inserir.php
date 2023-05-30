@@ -11,4 +11,9 @@
     $resultado = $comando->execute();
 
     header("Location: estrutura.php");
+<<<<<<< HEAD
+
+?>
+=======
     ?>
+>>>>>>> 53664b451d7ea5b54322f45b89facd6ce794f456

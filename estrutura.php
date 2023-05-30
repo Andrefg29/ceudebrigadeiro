@@ -1,9 +1,16 @@
 <?php
+<<<<<<< HEAD:estrutura.php
+include('conecta.php');
+    if(isset($_POST["entrar"])){
+        $email = $_POST['email'];
+$senha = $_POST['senha'];
+=======
 
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
 include('conecta.php');
+>>>>>>> 53664b451d7ea5b54322f45b89facd6ce794f456:estrutura.html
     $comando = $pdo->prepare("SELECT * from cadastro WHERE email='$email' and senha='$senha'" );
     $resultado = $comando->execute();
     $n = 0;
@@ -14,6 +21,14 @@ include('conecta.php');
     if($n == 0){
         header("Location: login.php?login=0");
     }
+<<<<<<< HEAD:estrutura.php
+    }
+    if(isset($_POST["cadastro"])){
+        header("Location: estrutura.php");}
+    if(isset($_POST["anonimo"])){
+    header("Location: estrutura.php");}
+=======
+>>>>>>> 53664b451d7ea5b54322f45b89facd6ce794f456:estrutura.html
 
 ?>
 
@@ -158,9 +173,9 @@ include('conecta.php');
     <br>
     <h1>Promoções</h1>
         <div class="promocao">
-           <a href="promocao30.html"><div class="p1">Produtos até<br>R$30</div></a> 
-           <a href="promocao50.html"><div class="p2">Produtos até<br>R$50</div></a> 
-           <a href="promocao100.html"><div class="p3">Produtos até<br>R$100</div></a> 
+           <a href="promocao30.php"><div class="p1">Produtos até<br>R$30</div></a> 
+           <a href="promocao50.php"><div class="p2">Produtos até<br>R$50</div></a> 
+           <a href="promocao100.php"><div class="p3">Produtos até<br>R$100</div></a> 
         </div>
 
         <br>
@@ -250,6 +265,8 @@ include('conecta.php');
         <div class="textocard">
             <h2>Ovo de Colher</h2>
             <p>R$28,90</p>
+<<<<<<< HEAD:estrutura.php
+=======
         </div>
     </div></a>  
 
@@ -326,10 +343,30 @@ include('conecta.php');
                   </div>
               </div>
             </div>
+>>>>>>> 53664b451d7ea5b54322f45b89facd6ce794f456:estrutura.html
         </div>
-    </div>
+    </div></a>  
 
-    <script src="js/navbar.js"></script>
+    <a href="cupcake.html"><div class="card">
+        <div class="imgcard"><img src="img/cupcake.jpg"></div>
+        <div class="textocard">
+            <h2>Mini Cupcake - 12un</h2>
+            <p>R$16,00</p>
+        </div>
+        </div></a>
+
+        <a href="copo_felicidade.html"><div class="card">
+            <div class="imgcard"><img src="img/copo_felicidade.jpg"></div>
+            <div class="textocard">
+                <h2>Copo da Felicidade</h2>
+                <p>R$15,90</p>
+            </div>
+            </div></a>
+</div>
+<br>
+
+<br>
+<?php include('footer.html') ?>
     <script src="js/slider.js"></script>
     <script src="js/maps.js"></script>
 </body>
