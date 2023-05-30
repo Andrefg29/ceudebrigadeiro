@@ -26,7 +26,11 @@ body {
   justify-content: center;
   background-image: url('../img/chocolate.jpg');
   background-size: cover;
+  flex-direction: column;
+}
 
+a{
+  color: #fff
 }
 
 .container {
